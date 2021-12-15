@@ -31,6 +31,16 @@ In addition, the tool will search for vulnerable files with the `.jar` extension
     * `gradle` if the scanned project is a gradle project (contains a `settings.gradle` or a `build.gradle` file)
     * `mvn` if the scanned project is a maven project (contains a `pom.xml` file)
 
+
+3. Building the projects before scanning will improve scan time and reduce potential scan errors
+
+    * maven projects __must__ be built prior to scanning, e.g. with the following command:
+       ```shell
+       mvn install
+       ```
+    * It is not necessary to run `gradle build` prior to scanning a `gradle` project, but that will greatly decrease the
+      scan time
+
 ---
 
 ## Usage
