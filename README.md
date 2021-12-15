@@ -6,8 +6,7 @@ containing the following known CVEs:
 * CVE-2021-45046
 * CVE-2021-44228
 
-It provides the exact path — both to direct or indirect dependencies, along with the fixed version for speedy
-remediation
+It provides the exact path to direct and indirect dependencies, along with the fixed version for speedy remediation.
 
 The supported packages managers are:
 
@@ -43,28 +42,27 @@ log4j-detect scan -d PROJECT_DIR
 ### linux
 
 ```shell
-VERSION=1.0.0
 ARCH=x64 # or ARCH=arm64
-wget "https://github.com/whitesource/icu-log4j-distribution/releases/download/latest/log4j-detect--$VERSION-linux-$ARCH.tar.gz"
-tar -xzvf log4j-detect-linux-$ARCH.tar.gz
+wget "https://github.com/whitesource/log4j-detect-distribution/releases/download/v1.0.0/log4j-detect-v1.0.0-linux-$ARCH.tar.gz"
+tar -xzvf log4j-detect-1.0.0-linux-$ARCH.tar.gz
 ./log4j-detect -h
 ```
 
 ### mac
 
 ```shell
-VERSION=1.0.0
 ARCH=x64 # or ARCH=arm64 
-wget "https://github.com/whitesource/icu-log4j-distribution/releases/download/latest/log4j-detect-$VERSION-darwin-$ARCH.tar.gz"
-tar -xzvf log4j-detect-darwin-$ARCH.tar.gz
+wget "https://github.com/whitesource/log4j-detect-distribution/releases/download/v1.0.0/log4j-detect-1.0.0-darwin-$ARCH.tar.gz"
+https://github.com/whitesource/log4j-detect-distribution/releases/download/v1.0.0/log4j-detect-1.0.0-darwin-amd64.tar.gz
+tar -xzvf log4j-detect-1.0.0-darwin-$ARCH.tar.gz
 ./log4j-detect -h
 ```
 
 ### windows
 
 Download and
-extract https://github.com/whitesource/icu-log4j-distribution/releases/download/latest/log4j-detect-VERSION-windows.zip,
-and the run:
+extract https://github.com/whitesource/log4j-detect-distribution/releases/download/v1.0.0/log4j-detect-1.0.0-windows-amd64.zip
+, and then run:
 
 ```shell
 .\log4j-detect.exe -h
