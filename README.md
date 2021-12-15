@@ -53,30 +53,31 @@ log4j-detect scan -d PROJECT_DIR
 
 ## Installation
 
-### linux
+### Linux
 
 ```shell
 ARCH=amd64 # or ARCH=arm64
 wget "https://github.com/whitesource/log4j-detect-distribution/releases/download/v1.0.0/log4j-detect-1.0.0-linux-$ARCH.tar.gz"
 tar -xzvf log4j-detect-1.0.0-linux-$ARCH.tar.gz
+chmod +x log4j-detect
 ./log4j-detect -h
 ```
 
-### mac
+### Mac
 
 ```shell
 ARCH=amd64 # or ARCH=arm64 
 wget "https://github.com/whitesource/log4j-detect-distribution/releases/download/v1.0.0/log4j-detect-1.0.0-darwin-$ARCH.tar.gz"
 tar -xzvf log4j-detect-1.0.0-darwin-$ARCH.tar.gz
+chmod +x log4j-detect
 ./log4j-detect -h
 ```
 
-### windows
+### Windows
 
-Download and
-extract https://github.com/whitesource/log4j-detect-distribution/releases/download/v1.0.0/log4j-detect-1.0.0-windows-amd64.zip
-, and then run:
-
-```shell
+```powershell
+Invoke-WebRequest -Uri "https://github.com/whitesource/log4j-detect-distribution/releases/download/v1.0.0/log4j-detect-1.0.0-windows-amd64.zip" -OutFile "log4j-detect.zip"
+Expand-Archive -LiteralPath 'log4j-detect.zip'
+cd log4j-detect
 .\log4j-detect.exe -h
 ```
