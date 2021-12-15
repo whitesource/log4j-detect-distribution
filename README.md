@@ -23,7 +23,7 @@ In addition, the tool will search for vulnerable files with the `.jar` extension
 **NOTE**
 
 1. For mac users, if the following message appears:
-   "log4j-detect" can't be opened because Apple cannot check it for malicious software", please follow the steps
+   "log4j-detect can't be opened because Apple cannot check it for malicious software", please follow the steps
    [described here](https://support.apple.com/en-il/guide/mac-help/mchleab3a043/mac)
 
 
