@@ -46,8 +46,8 @@ log4j-detect scan -d PROJECT_DIR
 ### linux
 
 ```shell
-ARCH=x64 # or ARCH=arm64
-wget "https://github.com/whitesource/log4j-detect-distribution/releases/download/v1.0.0/log4j-detect-v1.0.0-linux-$ARCH.tar.gz"
+ARCH=amd64 # or ARCH=arm64
+wget "https://github.com/whitesource/log4j-detect-distribution/releases/download/v1.0.0/log4j-detect-1.0.0-linux-$ARCH.tar.gz"
 tar -xzvf log4j-detect-1.0.0-linux-$ARCH.tar.gz
 ./log4j-detect -h
 ```
@@ -55,9 +55,8 @@ tar -xzvf log4j-detect-1.0.0-linux-$ARCH.tar.gz
 ### mac
 
 ```shell
-ARCH=x64 # or ARCH=arm64 
+ARCH=amd64 # or ARCH=arm64 
 wget "https://github.com/whitesource/log4j-detect-distribution/releases/download/v1.0.0/log4j-detect-1.0.0-darwin-$ARCH.tar.gz"
-https://github.com/whitesource/log4j-detect-distribution/releases/download/v1.0.0/log4j-detect-1.0.0-darwin-amd64.tar.gz
 tar -xzvf log4j-detect-1.0.0-darwin-$ARCH.tar.gz
 ./log4j-detect -h
 ```
