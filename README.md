@@ -22,10 +22,14 @@ In addition, the tool will search for vulnerable files with the `.jar` extension
 ---
 **NOTE**
 
-The relevant binaries must be installed for the scan to work, i.e:
+1. For mac users, if the following message appears:
+   "log4j-detect" can't be opened because Apple cannot check it for malicious software", please follow the steps
+   [described here](https://support.apple.com/en-il/guide/mac-help/mchleab3a043/mac)
 
-* `gradle` if the scanned project is a gradle project (contains a `settings.gradle` or a `build.gradle` file)
-* `mvn` if the scanned project is a maven project (contains a `pom.xml` file)
+
+2. The relevant binaries must be installed for the scan to work, i.e:
+    * `gradle` if the scanned project is a gradle project (contains a `settings.gradle` or a `build.gradle` file)
+    * `mvn` if the scanned project is a maven project (contains a `pom.xml` file)
 
 ---
 
