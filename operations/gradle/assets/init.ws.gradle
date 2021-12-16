@@ -1,0 +1,215 @@
+import groovy.json.JsonOutput
+
+def executed = false
+gradle.allprojects {
+    task whitesourceDependenciesTask { task ->
+        task.doLast {
+            if (executed) {
+                // we configured this task for all projects,
+                // but we only want to run it once
+                return
+            }
+
+            executed = true
+
+            println("WHITESOURCE: dependencies  task - START")
+
+            List<GradleProject> projects = []
+            rootProject.allprojects { Project p ->
+                def gp = new GradleProject()
+                gp.groupId = p.group
+                gp.artifactId = p.name
+                if (p.version != "unspecified") gp.version = p.version
+                gp.manifest = p.buildFile.getAbsolutePath()
+
+                if (System.getProperty("WS_INIT_GRADLE_INCLUDE_DEPENDENCIES", "false").toBoolean()) {
+                    gp.configGraphs = p.configurations.findAll { it.canBeResolved }.collectEntries { config ->
+                        def cDeps = new ConfigGraph(configuration: config, dependencyHandler: p.dependencies)
+                        cDeps.extract(config.incoming.resolutionResult.root)
+                        cDeps?.directDeps ? [(config.name): cDeps] : [:]
+                    }
+                }
+                projects.add(gp)
+            }
+
+            // This map is used in buildDeps for determining inner module dependencies
+            Map<String, String> projectPathToGAV = rootProject.allprojects.collectEntries { Project p ->
+                [("project " + p.path): "$p.group:$p.name:$p.version".toString()]
+            }
+
+            buildDeps(projects, projectPathToGAV)
+
+            println("WHITESOURCE: dependencies task - END")
+
+            printJson(projects)
+        }
+    }
+}
+
+static def printJson(Object projects) {
+    def json = JsonOutput.toJson(projects)
+    def path = System.getProperty("WS_INIT_GRADLE_OUTPUT_PATH", "./dependencies.json")
+    new File(path).write(json)
+}
+
+static def buildDeps(List<GradleProject> projects, Map<String, String> projectPathToGav) {
+    println("WHITESOURCE: buildDeps - START")
+    projects.each { GradleProject gp ->
+        gp.configGraphs.values().each { ConfigGraph graph ->
+            Set<ResolvedArtifact> artifacts
+            try {
+                artifacts = graph.theConfiguration().resolvedConfiguration.lenientConfiguration.getArtifacts()
+            } catch (ignored) {
+                return
+            }
+
+            graph.deps2Children.keySet().each { String depName ->
+                if (!gp.dependencies[depName]?.systemPath) {
+                    def dep = buildDep(depName, artifacts as Set<ResolvedArtifact>, graph.theDependencyHandler(), projectPathToGav)
+                    gp.dependencies.put(depName, dep)
+                }
+            }
+        }
+        println("WHITESOURCE: buildDeps - $gp - ${gp.dependencies.keySet().size()}")
+    }
+    println("WHITESOURCE: buildDeps - END")
+}
+
+static def buildDep(
+        String name,
+        Set<ResolvedArtifact> artifacts,
+        DependencyHandler handler,
+        Map<String, String> projectPathToGAV
+) {
+    // we check if the dependency name matches either a project display name or GAV
+    // if it does, we know it's an inner module
+    def gav = projectPathToGAV.get(name)
+    if (!gav) {
+        gav = projectPathToGAV.values().find { it == name }
+    }
+
+    if (gav) name = gav
+
+    def (g, a, v) = ["", "", ""]
+    if (name.matches(".*:.*:.*")) (g, a, v) = name.split(":")
+    else if (name.matches(".*:.*")) (g, a) = name.split(":")
+    else a = name
+
+    def d = new Dependency(groupId: g, artifactId: a, version: v != "unspecified" ? v : "")
+
+    if (gav) d.isInnerModule = true
+
+    def artifact = artifacts.find {
+        def id = it.moduleVersion.id
+        [id.group, id.name, id.version] == [g, a, v] && it.file.isFile()
+    }
+
+    if (artifact) {
+        d.systemPath = artifact.file.absolutePath
+        d.type = artifact.type
+    } else if (!gav) {
+        // if there is no artifact for this dependency, but it has been successfully resolved,
+        // it must be a pom.xml dependency. So we build a custom query for the pom.xml path
+        def queryResult = handler.createArtifactResolutionQuery()
+                .forModule(d.groupId, d.artifactId, d.version)
+                .withArtifacts(MavenModule, MavenPomArtifact)
+                .execute()
+
+        if (queryResult.resolvedComponents) {
+            def component = queryResult.resolvedComponents[0]
+            if (component) {
+                def pomFile = component.getArtifacts(MavenPomArtifact)[0].file
+                d.type = "pom"
+                d.systemPath = pomFile.getAbsolutePath()
+            }
+        }
+    }
+
+    return d
+}
+
+// Represents a gradle project
+class GradleProject {
+    String groupId
+    String artifactId
+    String version
+    String manifest
+
+    Map<String, Dependency> dependencies = [:]
+    Map<String, ConfigGraph> configGraphs = [:]
+
+    String toString() {
+        def suffix = version ? ":$version" : ""
+        return "$groupId:$artifactId$suffix".toString()
+    }
+}
+
+// Represents a minimal DependencyInfo object, with some extra metadata
+class Dependency {
+    String groupId
+    String artifactId
+    String version
+    String systemPath
+    String type
+
+    boolean isInnerModule
+}
+
+// Contains the data needed to build the dependency graph for a configuration
+class ConfigGraph {
+
+    Set<String> directDeps = []
+    Map<String, Set<String>> deps2Children = [:]
+
+    // reference to the Configuration
+    // we use it to find the artifact locations
+    private Configuration configuration
+
+    // unconventional getter name so that JsonOutput will ignore it
+    def theConfiguration() { configuration }
+
+    // reference to the gradle project dependency handler
+    // we use it to find the location of pom artifacts if a normal artifact is not found
+    private DependencyHandler dependencyHandler
+
+    // unconventional getter name so that JsonOutput will ignore it
+    def theDependencyHandler() { dependencyHandler }
+
+
+    def extract(ResolvedComponentResult root) {
+        root.dependencies.each { extract(it, true) }
+    }
+
+    String extract(result, direct = false) {
+        String name
+        if (result instanceof UnresolvedDependencyResult) {
+            name = extractUnresolved((UnresolvedDependencyResult) result)
+        } else {
+            name = extractResolved((ResolvedDependencyResult) result)
+        }
+        if (direct) directDeps.add(name)
+        return name
+    }
+
+    String extractUnresolved(UnresolvedDependencyResult result) {
+        def name = result.attempted.displayName
+        if (deps2Children.containsKey(name)) return name
+        deps2Children[name] = new HashSet()
+        return name
+    }
+
+    String extractResolved(ResolvedDependencyResult result) {
+        def name = depName(result.selected.moduleVersion)
+        if (deps2Children.containsKey(name)) return name
+        deps2Children[name] = new HashSet()
+        result.selected.dependencies.each {
+            def child = extract(it)
+            deps2Children[name].add(child)
+        }
+        return name
+    }
+
+    static String depName(ModuleVersionIdentifier m) {
+        return "$m.group:$m.name:$m.version".toString()
+    }
+}

@@ -1,0 +1,66 @@
+project_name: log4j-detect
+
+release:
+  prerelease: auto
+  name_template: "{{.ProjectName}}-v{{.Version}}"
+
+  github:
+    owner: whitesource
+    name: log4j-detect-distribution
+
+changelog:
+  skip: true
+
+before:
+  hooks:
+    - go mod tidy
+
+checksum:
+  algorithm: sha256
+  # Disable the generation/upload of the checksum file.
+  disable: false
+
+builds:
+  - <<: &build_defaults
+      binary: log4j-detect
+      main: ./main.go
+
+    id: linux
+    goos: [ linux ]
+    goarch: [ amd64, arm64 ]
+
+  - <<: *build_defaults
+    id: windows
+    goos: [ windows ]
+    goarch: [ amd64, arm64 ]
+
+  - <<: *build_defaults
+    id: macos
+    goos: [ darwin ]
+    goarch: [ amd64, arm64 ]
+
+
+archives:
+  - <<: &archive_defaults
+      name_template: "{{ .ProjectName }}-{{ .Version }}-{{ .Os }}-{{ .Arch }}"
+      wrap_in_directory: "false"
+      files:
+        - none*
+    id: unix
+    builds: [ linux, macos ]
+    format: tar.gz
+
+  - <<: *archive_defaults
+    id: windows
+    builds: [ windows ]
+    format: zip
+
+nfpms:
+  - maintainer: WhiteSource
+    vendor: WhiteSource
+    homepage: https://github.com/whitesource/icu-log4j-distribution
+    description: Tool for discovering "log4shell" exploit
+    bindir: /usr/bin
+    formats:
+      - deb
+      - rpm
