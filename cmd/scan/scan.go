@@ -74,11 +74,11 @@ func (o *Options) Run() error {
 
 	operationResults := operations.Perform(o.Logger, detected, o.Settings.Resolvers.Surgeons(o.Logger, o.commander))
 	enhancedResults := supplements.Supplement(o.Logger, operationResults)
-	vulCount := o.addVulnerabilities(enhancedResults, log4jLibs)
+	cves := o.addVulnerabilities(enhancedResults, cve2Lib)
 
 	_, _ = fmt.Fprintln(o.Out)
 
-	if vulCount > 0 {
+	if len(cves) > 0 {
 		o.displayVulnerabilities(enhancedResults)
 		_, _ = fmt.Fprintf(o.Out, `
 One or more of your projects contain the %s exploit.
@@ -90,9 +90,9 @@ Learn more about the vulnerability and it's remediation:
 
 ©WhiteSource
 `,
-			utils.MakeOrangeText("log4j CVE-2021-44228 or CVE-2021-45046"),
+			utils.MakeOrangeText(fmt.Sprintf("log4j %s", strings.Join(cves, "/"))),
 			o.generateRemediationSteps(enhancedResults),
-			utils.MakeBlueText("https://www.whitesourcesoftware.com/resources/blog/log4j-vulnerability-cve-2021-44228/"))
+			utils.MakeBlueText("https://www.whitesourcesoftware.com/resources/blog/log4j-vulnerability-cveFiles-2021-44228/"))
 	} else {
 		_, _ = fmt.Fprintln(o.Out, utils.MakeGreenText("No vulnerabilities were detected"))
 	}
@@ -100,8 +100,9 @@ Learn more about the vulnerability and it's remediation:
 	return nil
 }
 
-func (o *Options) addVulnerabilities(results []records.EnhancedResult, vulnerableLibs []records.VulnerableLib) int {
+func (o *Options) addVulnerabilities(results []records.EnhancedResult, vulnerableLibs []records.VulnerableLib) []string {
 	count := 0
+	cveMap := map[string]bool{}
 	for i := range results {
 		r := &results[i]
 		r.DepId2VulnerableLib = map[records.Id]records.VulnerableLib{}
@@ -109,12 +110,17 @@ func (o *Options) addVulnerabilities(results []records.EnhancedResult, vulnerabl
 			for _, lib := range vulnerableLibs {
 				if dep.Sha1 == lib.Sha1 {
 					r.DepId2VulnerableLib[id] = lib
+					cveMap[lib.CVE] = true
 					count++
 				}
 			}
 		}
 	}
-	return count
+	var result []string
+	for cve := range cveMap {
+		result = append(result, cve)
+	}
+	return result
 }
 
 func (o *Options) displayVulnerabilities(results []records.EnhancedResult) {
