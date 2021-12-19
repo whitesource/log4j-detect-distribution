@@ -8,9 +8,6 @@ release:
     owner: whitesource
     name: log4j-detect-distribution
 
-changelog:
-  skip: true
-
 before:
   hooks:
     - go mod tidy
