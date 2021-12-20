@@ -159,7 +159,7 @@ func (o *Options) generateRemediationSteps(results []records.EnhancedResult) str
 	for _, r := range results {
 		for _, v := range r.DepId2VulnerableLib {
 			if artifact2Fix, found := fixes[v.GroupId]; found {
-				if fix, found := artifact2Fix[v.Artifact]; found {
+				if fix, found := artifact2Fix[v.ArtifactId]; found {
 					set[fix] = true
 				}
 			}

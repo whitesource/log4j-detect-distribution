@@ -9,7 +9,7 @@ import (
 
 type VulnerableLib struct {
 	GroupId        string      `json:"groupId"`
-	Artifact       string      `json:"artifact"`
+	ArtifactId     string      `json:"artifactId"`
 	PackageVersion interface{} `json:"packageVersion"`
 	FileName       string      `json:"fileName"`
 	Sha1           string      `json:"sha1"`

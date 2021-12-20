@@ -1,13 +1,10 @@
 package scan
 
 import (
-	"embed"
 	_ "embed"
 	"encoding/json"
+	"fmt"
 	"github.com/whitesource/log4j-detect/records"
-	"io/fs"
-	"path/filepath"
-	"strings"
 )
 
 type Vulnerability struct {
@@ -25,31 +22,14 @@ var fixes = map[string]map[string]string{
 	},
 }
 
-//go:embed cve/*.json
-var cveFiles embed.FS
+//go:embed cve/libs.json
+var cveFiles []byte
 
 var cve2Lib []records.VulnerableLib
 
 func init() {
-	files, err := fs.ReadDir(cveFiles, "cve")
+	err := json.Unmarshal(cveFiles, &cve2Lib)
 	if err != nil {
-		panic(err)
-	}
-
-	for _, f := range files {
-		var libs []records.VulnerableLib
-		data, err := cveFiles.ReadFile(filepath.Join("cve", f.Name()))
-		if err != nil {
-			panic(err)
-		}
-		err = json.Unmarshal(data, &libs)
-		if err != nil {
-			panic(err)
-		}
-		cve := strings.ReplaceAll(f.Name(), ".json", "")
-		for i := range libs {
-			libs[i].CVE = cve
-		}
-		cve2Lib = append(cve2Lib, libs...)
+		panic(fmt.Sprintf("failed to unmarshal libraries: %v", err))
 	}
 }
