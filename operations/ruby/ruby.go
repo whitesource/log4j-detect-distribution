@@ -74,8 +74,29 @@ func (s Surgeon) singleProjectOperation(lockFilePath string, gemCacheDirs []stri
 }
 
 func (s Surgeon) discoverGemCacheDirs() ([]string, error) {
+	var cacheDirs []string
+
+	for _, binary := range []string{"jgem", "gem"} {
+		if !utils.IsInstalled(binary) {
+			continue
+		}
+
+		dirs, err := s.discoverGemCacheDirsWithBinary(binary)
+		if err == nil {
+			cacheDirs = append(cacheDirs, dirs...)
+		}
+	}
+
+	if len(cacheDirs) == 0 {
+		return nil, errors.New("failed to find ruby gem cache directory")
+	}
+
+	return cacheDirs, nil
+}
+
+func (s Surgeon) discoverGemCacheDirsWithBinary(gemBinary string) ([]string, error) {
 	output, err := s.commander.
-		Command(s.logger, "gem", "environment", "gempath").
+		Command(s.logger, gemBinary, "environment", "gempath").
 		Output()
 
 	if err != nil {
@@ -96,11 +117,6 @@ func (s Surgeon) discoverGemCacheDirs() ([]string, error) {
 			cacheDirs = append(cacheDirs, cacheDir)
 		}
 	}
-
-	if len(cacheDirs) == 0 {
-		return nil, fmt.Errorf("failed to find ruby gem cache directory from gempath %s", gemPath)
-	}
-
 	return cacheDirs, nil
 }
 
