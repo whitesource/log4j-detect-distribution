@@ -11,6 +11,7 @@ import (
 	"github.com/whitesource/log4j-detect/utils/exec"
 	"os"
 	"path/filepath"
+	"runtime"
 	"strings"
 )
 
@@ -110,8 +111,15 @@ func (s Surgeon) discoverGemCacheDirsWithBinary(gemBinary string) ([]string, err
 
 	gemPath := lines[0]
 
+	var separator string
+	if runtime.GOOS == "windows" {
+		separator = ";"
+	} else {
+		separator = ":"
+	}
+
 	var cacheDirs []string
-	for _, dir := range strings.Split(gemPath, ":") {
+	for _, dir := range strings.Split(gemPath, separator) {
 		cacheDir := filepath.Join(dir, "cache")
 		if utils.DirExists(dir) {
 			cacheDirs = append(cacheDirs, cacheDir)

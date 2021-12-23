@@ -34,6 +34,7 @@ func Perform(logger logr.Logger, detected map[records.Organ][]string, surgeons m
 
 		r, err := s.Operate(paths)
 		if err != nil {
+			_, _ = fmt.Fprintf(os.Stderr, "error: failed to scan %s project: %v\n", o, err)
 			logger.Error(err, "failed to scan projects", "projectType", o)
 			continue
 		}
