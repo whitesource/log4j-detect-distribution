@@ -50,7 +50,9 @@ func (s Surgeon) Operate(paths []string) ([]records.OperationResult, error) {
 
 	for _, p := range paths {
 		result := s.singleProjectOperation(p, gemCacheDirs)
-		s.warnIfSystemPathMissing(result)
+		if result.Err == nil {
+			s.warnIfSystemPathMissing(result)
+		}
 		results = append(results, result)
 	}
 

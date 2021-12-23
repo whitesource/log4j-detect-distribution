@@ -98,7 +98,7 @@ Learn more about the vulnerability and it's remediation:
 	return nil
 }
 
-func (o *Options) addVulnerabilities(results []records.EnhancedResult, cve2Sha12Lib map[string]map[string]records.VulnerableLib) []string {
+func (o *Options) addVulnerabilities(results []records.EnhancedResult, cve2Sha12Lib CveToSha1ToLib) []string {
 	cveMap := map[string]bool{}
 	for i := range results {
 		r := &results[i]
@@ -155,7 +155,7 @@ func (o *Options) generateRemediationSteps(results []records.EnhancedResult) str
 	for _, r := range results {
 		for _, v := range r.DepId2VulnerableLib {
 			if artifact2Fix, found := fixes[v.GroupId]; found {
-				if fix, found := artifact2Fix[v.ArtifactId]; found {
+				if fix, fixFound := artifact2Fix[v.ArtifactId]; fixFound {
 					set[fix] = true
 				}
 			}

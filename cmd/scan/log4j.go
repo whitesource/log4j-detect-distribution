@@ -25,7 +25,11 @@ var fixes = map[string]map[string]string{
 //go:embed cve/libs.json
 var libs []byte
 
-var cve2Sha2Lib map[string]map[string]records.VulnerableLib
+type Sha1ToLib map[string]records.VulnerableLib
+
+type CveToSha1ToLib map[string]Sha1ToLib
+
+var cve2Sha2Lib CveToSha1ToLib
 
 func init() {
 	err := json.Unmarshal(libs, &cve2Sha2Lib)
