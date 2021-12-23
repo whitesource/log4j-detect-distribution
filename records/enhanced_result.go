@@ -13,7 +13,6 @@ type VulnerableLib struct {
 	PackageVersion interface{} `json:"packageVersion"`
 	FileName       string      `json:"fileName"`
 	Sha1           string      `json:"sha1"`
-	CVE            string
 }
 
 type EnhancedResult struct {

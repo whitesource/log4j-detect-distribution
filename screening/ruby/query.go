@@ -1,4 +1,4 @@
-package gradle
+package ruby
 
 import (
 	"github.com/whitesource/log4j-detect/fs"
@@ -7,6 +7,6 @@ import (
 
 func Query() *fs.Query {
 	return &fs.Query{
-		Filename: match.NewExtensionMatcher("jar", "gem"),
+		Filename: match.NewSimpleNameMatcher("Gemfile.lock", "gems.locked"),
 	}
 }
