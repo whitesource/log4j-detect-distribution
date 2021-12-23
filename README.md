@@ -33,6 +33,7 @@ In addition, the tool will search for vulnerable files with the `.jar`,`.gem` ex
 2. The relevant binaries must be installed for the scan to work, i.e:
     * `gradle` if the scanned project is a gradle project (contains a `settings.gradle` or a `build.gradle` file)
     * `mvn` if the scanned project is a maven project (contains a `pom.xml` file)
+    * `ruby`/`jruby` and `gem`/`jgem` if the scanned project is a bundler project (contains a `Gemfile.lock`/`gems.locked` file)
 
 
 3. Building the projects before scanning will improve scan time and reduce potential scan errors
