@@ -74,16 +74,13 @@ func (o *Options) Run() error {
 
 	operationResults := operations.Perform(o.Logger, detected, o.Settings.Resolvers.Surgeons(o.Logger, o.commander))
 	enhancedResults := supplements.Supplement(o.Logger, operationResults)
-	cves := o.addVulnerabilities(enhancedResults, cve2Lib)
+	cves := o.addVulnerabilities(enhancedResults, cve2Sha2Lib)
 
 	_, _ = fmt.Fprintln(o.Out)
 
 	if len(cves) > 0 {
 		o.displayVulnerabilities(enhancedResults)
-		_, _ = fmt.Fprintf(o.Out, `
-One or more of your projects contain the %s exploit.
-
-Remediation steps:
+		_, _ = fmt.Fprintf(o.Out, `One or more of your projects contain the %s exploit.
 %s
 Learn more about the vulnerability and it's remediation:
 %s
@@ -100,18 +97,16 @@ Learn more about the vulnerability and it's remediation:
 	return nil
 }
 
-func (o *Options) addVulnerabilities(results []records.EnhancedResult, vulnerableLibs []records.VulnerableLib) []string {
-	count := 0
+func (o *Options) addVulnerabilities(results []records.EnhancedResult, cve2Sha12Lib map[string]map[string]records.VulnerableLib) []string {
 	cveMap := map[string]bool{}
 	for i := range results {
 		r := &results[i]
 		r.DepId2VulnerableLib = map[records.Id]records.VulnerableLib{}
 		for id, dep := range *r.Deps {
-			for _, lib := range vulnerableLibs {
-				if dep.Sha1 == lib.Sha1 {
+			for cve, sha12Lib := range cve2Sha12Lib {
+				if lib, ok := sha12Lib[dep.Sha1]; ok {
 					r.DepId2VulnerableLib[id] = lib
-					cveMap[lib.CVE] = true
-					count++
+					cveMap[cve] = true
 				}
 			}
 		}
@@ -141,7 +136,7 @@ func (o *Options) displayVulnerabilities(results []records.EnhancedResult) {
 				break
 			}
 
-			_, _ = fmt.Fprintln(o.Out, utils.MakeBlueText("Vulnerable Jars: "))
+			_, _ = fmt.Fprintln(o.Out, utils.MakeBlueText("Vulnerable Files: "))
 			for id := range r.DepId2VulnerableLib {
 				path := (*r.Libraries)[id].SystemPath
 				if abs, err := filepath.Abs(path); err == nil {
@@ -166,7 +161,12 @@ func (o *Options) generateRemediationSteps(results []records.EnhancedResult) str
 		}
 	}
 
+	if len(set) == 0 {
+		return ""
+	}
+
 	var steps strings.Builder
+	steps.WriteString("\nRemediation Steps:\n")
 	for fix := range set {
 		steps.WriteString(fmt.Sprintf("\t* %s\n", fix))
 	}

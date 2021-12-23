@@ -8,11 +8,12 @@ const (
 	LTGolang
 	LTJava
 	LTFs
+	LTRuby
 )
 
 func (lt LibType) String() string {
 	// Order of strings should match the 'const' order
 	return [...]string{
-		"", "GO", "JAVA", "FS",
+		"", "GO", "JAVA", "FS", "RUBY",
 	}[lt]
 }

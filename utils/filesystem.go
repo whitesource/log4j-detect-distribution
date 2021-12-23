@@ -3,6 +3,7 @@ package utils
 import (
 	"bufio"
 	"fmt"
+	"io/ioutil"
 	"os"
 	"path/filepath"
 )
@@ -57,4 +58,14 @@ func ReadFileAsSlice(fileToRead string) ([]string, error) {
 	}
 
 	return lines, err
+}
+
+// CreateTempFile creates a temporary file and returns the path
+func CreateTempFile(contents string, pattern string) (string, error) {
+	file, err := ioutil.TempFile("", pattern)
+	if err != nil {
+		return "", fmt.Errorf("failed to create temp file: %w", err)
+	}
+	_, err = file.WriteString(contents)
+	return file.Name(), err
 }

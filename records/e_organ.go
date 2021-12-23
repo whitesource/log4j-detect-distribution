@@ -7,6 +7,7 @@ const (
 	OMaven Organ = iota
 	OGradle
 	OFS
+	ORuby
 )
 
 func (organ Organ) String() string {
@@ -15,5 +16,6 @@ func (organ Organ) String() string {
 		"maven",
 		"gradle",
 		"file_system",
+		"ruby",
 	}[organ]
 }

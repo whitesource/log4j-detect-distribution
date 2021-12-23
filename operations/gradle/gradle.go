@@ -4,7 +4,6 @@ import (
 	_ "embed"
 	"encoding/json"
 	"errors"
-	"fmt"
 	"github.com/go-logr/logr"
 	"github.com/whitesource/log4j-detect/records"
 	"github.com/whitesource/log4j-detect/utils"
@@ -229,12 +228,7 @@ func toStringList(strMap map[string]bool) (values []string) {
 
 // persistInitScript saves the gradle init script to a temp file and returns the path
 func persistInitScript() (string, error) {
-	file, err := ioutil.TempFile("", "gradle")
-	if err != nil {
-		return "", fmt.Errorf("gradle: failed to create temp file: %w", err)
-	}
-	_, err = file.WriteString(initScriptSource)
-	return file.Name(), err
+	return utils.CreateTempFile(initScriptSource, "gradle")
 }
 
 func buildOpResult(project Project) records.OperationResult {

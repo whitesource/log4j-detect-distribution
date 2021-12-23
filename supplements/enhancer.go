@@ -31,11 +31,13 @@ func Supplement(logger logr.Logger, opResults []records.OperationResult) []recor
 
 func availableEnhancers(logger logr.Logger) map[records.LibType]Enhancer {
 	java := NewJavaEnhancer(logger)
+	ruby := NewRubyEnhancer(logger)
 	fs := NewFsEnhancer()
 
 	available := map[records.LibType]Enhancer{
 		java.LType(): java,
 		fs.LType():   fs,
+		ruby.LType(): ruby,
 	}
 
 	return available

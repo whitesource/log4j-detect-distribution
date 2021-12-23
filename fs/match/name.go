@@ -3,6 +3,7 @@ package match
 import (
 	"io/fs"
 	"regexp"
+	"strings"
 )
 
 // NameMatcher represents an arbitrary test for a file name (without leading directories)
@@ -28,6 +29,17 @@ func NewNameRegexMatcher(rs ...*regexp.Regexp) func(name string, _ fs.FileMode) 
 	return func(name string, _ fs.FileMode) bool {
 		for _, r := range rs {
 			if r.MatchString(name) {
+				return true
+			}
+		}
+		return false
+	}
+}
+
+func NewExtensionMatcher(extensions ...string) func(name string, _ fs.FileMode) bool {
+	return func(name string, _ fs.FileMode) bool {
+		for _, ext := range extensions {
+			if strings.HasSuffix(name, "."+ext) {
 				return true
 			}
 		}

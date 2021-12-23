@@ -3,7 +3,6 @@ package settings
 import (
 	"fmt"
 	"github.com/go-logr/logr"
-	"github.com/spf13/cobra"
 	"github.com/whitesource/log4j-detect/fs"
 	"github.com/whitesource/log4j-detect/fs/match"
 	"github.com/whitesource/log4j-detect/operations"
@@ -33,15 +32,13 @@ func (f *Flags) ToSettings(logger logr.Logger) (*Settings, error) {
 			Fs: FilesystemResolver{
 				Disabled: false,
 			},
+			Ruby: RubyResolver{
+				Disabled: false,
+			},
 		},
 		logger: logger,
 	}
 	return s, nil
-}
-
-func AddFlags(cmd *cobra.Command, f *Flags) {
-	cmd.Flags().BoolVarP(&f.mavenOnly, "maven-only", "m", false, "only scan for maven projects")
-	cmd.Flags().BoolVarP(&f.gradleOnly, "gradle-only", "g", false, "only scan for gradle projects")
 }
 
 // Settings represents all settings.
@@ -58,6 +55,7 @@ type Resolvers struct {
 	Gradle GradleResolver
 	Maven  MavenResolver
 	Fs     FilesystemResolver
+	Ruby   RubyResolver
 }
 
 type Resolver interface {
@@ -90,9 +88,9 @@ func (s *Settings) GlobalExcludes() match.Matcher {
 }
 
 func (r *Resolvers) ManifestQueries() map[records.Organ]*fs.Query {
-	return mergeQueries(r.Maven, r.Gradle, r.Fs)
+	return mergeQueries(r.Maven, r.Gradle, r.Fs, r.Ruby)
 }
 
 func (r *Resolvers) Surgeons(logger logr.Logger, commander exec.Commander) map[records.Organ]operations.Surgeon {
-	return mergeSurgeons(logger, commander, r.Maven, r.Gradle, r.Fs)
+	return mergeSurgeons(logger, commander, r.Maven, r.Gradle, r.Fs, r.Ruby)
 }
