@@ -61,6 +61,7 @@ func (s Surgeon) singleProjectOperation(lockFilePath string, gemCacheDirs []stri
 	deps, err := s.parseGemLock(lockFilePath)
 	if err != nil {
 		result.Err = fmt.Errorf("failed to parse lock file %s: %w", lockFilePath, err)
+		return
 	}
 
 	return records.OperationResult{
@@ -104,12 +105,7 @@ func (s Surgeon) discoverGemCacheDirsWithBinary(gemBinary string) ([]string, err
 		return nil, fmt.Errorf("failed to retrieve ruby gem dir - %w", err)
 	}
 
-	lines := strings.Split(string(output), "\n")
-	if len(lines) == 0 {
-		return nil, fmt.Errorf("failed to retrieve ruby gem dir, unexpected output %s", output)
-	}
-
-	gemPath := lines[0]
+	gemPath := strings.TrimSpace(string(output))
 
 	var separator string
 	if runtime.GOOS == "windows" {

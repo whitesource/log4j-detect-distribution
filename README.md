@@ -14,8 +14,9 @@ The supported packages managers are:
 
 * gradle
 * maven
+* bundler
 
-In addition, the tool will search for vulnerable files with the `.jar` extension.
+In addition, the tool will search for vulnerable files with the `.jar`,`.gem` extensions.
 
 ### Prerequisites:
 
@@ -40,6 +41,12 @@ In addition, the tool will search for vulnerable files with the `.jar` extension
        ```shell
        mvn install
        ```
+
+    * bundler projects __must__ be built prior to scanning, e.g. with the following command:
+       ```shell
+       jbundler install
+       ```
+
     * It is not necessary to run `gradle build` prior to scanning a `gradle` project, but that will greatly decrease the
       scan time
 
@@ -53,7 +60,8 @@ In order to scan your project, simply run the following command:
 log4j-detect scan -d PROJECT_DIR
 ```
 
-The folder can include source code that uses maven/gradle in the project, as well as binaries (i.e jar files)
+The folder can include source code that uses maven/gradle/bundler in the project, as well as binaries (i.e jar, gem
+files)
 
 ## Installation
 
