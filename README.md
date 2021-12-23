@@ -69,8 +69,8 @@ supported extensions mentioned above
 
 ```shell
 ARCH=amd64 # or ARCH=arm64
-wget "https://github.com/whitesource/log4j-detect-distribution/releases/latest/download/log4j-detect-1.2.1-linux-$ARCH.tar.gz"
-tar -xzvf log4j-detect-1.2.1-linux-$ARCH.tar.gz
+wget "https://github.com/whitesource/log4j-detect-distribution/releases/latest/download/log4j-detect-1.3.0-linux-$ARCH.tar.gz"
+tar -xzvf log4j-detect-1.3.0-linux-$ARCH.tar.gz
 chmod +x log4j-detect
 ./log4j-detect -h
 ```
@@ -79,8 +79,8 @@ chmod +x log4j-detect
 
 ```shell
 ARCH=amd64 # or ARCH=arm64 
-wget "https://github.com/whitesource/log4j-detect-distribution/releases/latest/download/log4j-detect-1.2.1-darwin-$ARCH.tar.gz"
-tar -xzvf log4j-detect-1.2.1-darwin-$ARCH.tar.gz
+wget "https://github.com/whitesource/log4j-detect-distribution/releases/latest/download/log4j-detect-1.3.0-darwin-$ARCH.tar.gz"
+tar -xzvf log4j-detect-1.3.0-darwin-$ARCH.tar.gz
 chmod +x log4j-detect
 ./log4j-detect -h
 ```
@@ -88,7 +88,7 @@ chmod +x log4j-detect
 ### Windows
 
 ```powershell
-Invoke-WebRequest -Uri "https://github.com/whitesource/log4j-detect-distribution/releases/latest/download/log4j-detect-1.2.1-windows-amd64.zip" -OutFile "log4j-detect.zip"
+Invoke-WebRequest -Uri "https://github.com/whitesource/log4j-detect-distribution/releases/latest/download/log4j-detect-1.3.0-windows-amd64.zip" -OutFile "log4j-detect.zip"
 Expand-Archive -LiteralPath 'log4j-detect.zip'
 cd log4j-detect
 .\log4j-detect.exe -h
