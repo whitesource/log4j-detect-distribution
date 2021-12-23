@@ -80,7 +80,8 @@ func (o *Options) Run() error {
 
 	if len(cves) > 0 {
 		o.displayVulnerabilities(enhancedResults)
-		_, _ = fmt.Fprintf(o.Out, `One or more of your projects contain the %s exploit.
+		_, _ = fmt.Fprintf(o.Out, `
+One or more of your projects contain the %s exploit.
 %s
 Learn more about the vulnerability and it's remediation:
 %s

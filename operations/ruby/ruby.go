@@ -33,8 +33,8 @@ func (s Surgeon) Validate(_ []string) error {
 	if !utils.IsInstalled("ruby") {
 		return errors.New("ruby is not installed")
 	}
-	if !utils.IsInstalled("gem") {
-		return errors.New("gem is not installed")
+	if !utils.IsInstalled("gem") && !utils.IsInstalled("jgem") {
+		return errors.New("gem/jgem not installed")
 	}
 	return nil
 }
