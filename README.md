@@ -60,8 +60,8 @@ In order to scan your project, simply run the following command:
 log4j-detect scan -d PROJECT_DIR
 ```
 
-The folder can include source code that uses maven/gradle/bundler in the project, as well as binaries (i.e jar, gem
-files)
+The folder can include source code that uses supported package managers in the project, as well binaries with the
+supported extensions mentioned above)
 
 ## Installation
 
