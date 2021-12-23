@@ -61,7 +61,7 @@ log4j-detect scan -d PROJECT_DIR
 ```
 
 The folder can include source code that uses supported package managers in the project, as well binaries with the
-supported extensions mentioned above)
+supported extensions mentioned above
 
 ## Installation
 
