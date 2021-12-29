@@ -247,12 +247,19 @@ func (s Surgeon) findProjectDirects(mavenDepsList []string, opr records.Operatio
 //  the list of children needed by the library prj
 //  filtering out libraries that are not part of the class path
 func extractChildren(prj mvnparser.MavenProject, libraries *map[records.Id]records.Library) (children []records.Id) {
+	unique := make(map[records.Id]bool)
+
 	for _, dep := range prj.Dependencies {
 		child := generateId(dep.GroupId, dep.ArtifactId)
 		if _, found := (*libraries)[child]; found {
-			children = append(children, child)
+			unique[child] = true
 		}
 	}
+
+	for key := range unique {
+		children = append(children, key)
+	}
+
 	return children
 }
 
