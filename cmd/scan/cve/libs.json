@@ -3417,5 +3417,1429 @@
       "fileName": "log4j-core-2.14.1-tests.jar",
       "sha1": "ff57e803b2a7c9242f7f4c506f627c69ae94308f"
     }
+  },
+  "CVE-2020-9488": {
+    "00a91369f655eb1639c6aece5c5eb5108db18306": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.6.2",
+      "fileName": "log4j-core-2.6.2.jar",
+      "sha1": "00a91369f655eb1639c6aece5c5eb5108db18306"
+    },
+    "01723837573e4c5dbc8840f9f6e8f79b245b94bb": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.12.0",
+      "fileName": "log4j-core-2.12.0.jar",
+      "sha1": "01723837573e4c5dbc8840f9f6e8f79b245b94bb"
+    },
+    "0278c9d0ae02132ab6d00e709926c227022e85a4": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.16",
+      "fileName": "log4j-1.2.16.jar",
+      "sha1": "0278c9d0ae02132ab6d00e709926c227022e85a4"
+    },
+    "02de9a73435517ea10cee73fe9b6c01d6cf26f0e": {
+      "groupId": "org.apache.logging.log4j.osgi",
+      "artifactId": "log4j-core-osgi-reduced",
+      "packageVersion": "2.0-rc1",
+      "fileName": "log4j-core-osgi-reduced-2.0-rc1.jar",
+      "sha1": "02de9a73435517ea10cee73fe9b6c01d6cf26f0e"
+    },
+    "03b254c872b95141751f414e353a25c2ac261b51": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.14",
+      "fileName": "log4j-1.2.14.jar",
+      "sha1": "03b254c872b95141751f414e353a25c2ac261b51"
+    },
+    "052f6548ae1688e126c29b5dc400929dc0128615": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.9.0",
+      "fileName": "log4j-core-2.9.0.jar",
+      "sha1": "052f6548ae1688e126c29b5dc400929dc0128615"
+    },
+    "057b8740427ee6d7b0b60792751356cad17dc0d9": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.12",
+      "fileName": "log4j-1.2.12.jar",
+      "sha1": "057b8740427ee6d7b0b60792751356cad17dc0d9"
+    },
+    "07992bf5f2cb735e4673478071e53e284daecfe7": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.8.2.redhat-1",
+      "fileName": "log4j-core-2.8.2.redhat-1.jar",
+      "sha1": "07992bf5f2cb735e4673478071e53e284daecfe7"
+    },
+    "0c0a953ee046804871485893a88434a60964e20f": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.16.redhat-4",
+      "fileName": "log4j-1.2.16.redhat-4.jar",
+      "sha1": "0c0a953ee046804871485893a88434a60964e20f"
+    },
+    "0d99532ba3603f27bebf4cdd3653feb0e0b84cf6": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.4",
+      "fileName": "log4j-core-2.4.jar",
+      "sha1": "0d99532ba3603f27bebf4cdd3653feb0e0b84cf6"
+    },
+    "13521c5364501478e28c77a7f86b90b6ed5dbb77": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.0.2",
+      "fileName": "log4j-core-2.0.2.jar",
+      "sha1": "13521c5364501478e28c77a7f86b90b6ed5dbb77"
+    },
+    "1bea08066ea31502159c62c0c6a7f1b0fd9a87e7": {
+      "groupId": "org.apache.logging.log4j.osgi",
+      "artifactId": "log4j-core-osgi-reduced",
+      "packageVersion": "2.0-beta7",
+      "fileName": "log4j-core-osgi-reduced-2.0-beta7.jar",
+      "sha1": "1bea08066ea31502159c62c0c6a7f1b0fd9a87e7"
+    },
+    "1fb514bfbec10815d68953ed2fc4dd8c98ee245f": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.0-beta6",
+      "fileName": "log4j-core-2.0-beta6.jar",
+      "sha1": "1fb514bfbec10815d68953ed2fc4dd8c98ee245f"
+    },
+    "2b557bf1023c3a3a0f7f200fafcd7641b89cbb83": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.6.1",
+      "fileName": "log4j-core-2.6.1.jar",
+      "sha1": "2b557bf1023c3a3a0f7f200fafcd7641b89cbb83"
+    },
+    "2be463a710be42bb6b4831b980f0d270b98ff233": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.8",
+      "fileName": "log4j-core-2.8.jar",
+      "sha1": "2be463a710be42bb6b4831b980f0d270b98ff233"
+    },
+    "2e8d52acfc8c2bbbaa7baf9f3678826c354f5405": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.0-rc2",
+      "fileName": "log4j-core-2.0-rc2.jar",
+      "sha1": "2e8d52acfc8c2bbbaa7baf9f3678826c354f5405"
+    },
+    "2f1bbbeb3399b36b665d6ab8b7977a86b7ca79cb": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.2.0.redhat-1",
+      "fileName": "log4j-core-2.2.0.redhat-1.jar",
+      "sha1": "2f1bbbeb3399b36b665d6ab8b7977a86b7ca79cb"
+    },
+    "31823dcde108f2ea4a5801d1acc77869d7696533": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.1",
+      "fileName": "log4j-core-2.1.jar",
+      "sha1": "31823dcde108f2ea4a5801d1acc77869d7696533"
+    },
+    "3640dd71069d7986c9a14d333519216f4ca5c094": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.8",
+      "fileName": "log4j-1.2.8.jar",
+      "sha1": "3640dd71069d7986c9a14d333519216f4ca5c094"
+    },
+    "3b1bbc44acb00a297ea07ec03038464ee5685832": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.2",
+      "fileName": "log4j-1.2.2.jar",
+      "sha1": "3b1bbc44acb00a297ea07ec03038464ee5685832"
+    },
+    "4363cdf913a584fe8fa72cf4c0eaae181ef7d1eb": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.0-rc1",
+      "fileName": "log4j-core-2.0-rc1.jar",
+      "sha1": "4363cdf913a584fe8fa72cf4c0eaae181ef7d1eb"
+    },
+    "4382e93136c06bfb34ddfa0bb8a9fb4ea2f3df59": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.12.1",
+      "fileName": "log4j-core-2.12.1.jar",
+      "sha1": "4382e93136c06bfb34ddfa0bb8a9fb4ea2f3df59"
+    },
+    "4ac28ff2f1ddf05dae3043a190451e8c46b73c31": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.8.1",
+      "fileName": "log4j-core-2.8.1.jar",
+      "sha1": "4ac28ff2f1ddf05dae3043a190451e8c46b73c31"
+    },
+    "4bf32b10f459a4ecd4df234ae2ccb32b9d9ba9b7": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.6",
+      "fileName": "log4j-1.2.6.jar",
+      "sha1": "4bf32b10f459a4ecd4df234ae2ccb32b9d9ba9b7"
+    },
+    "4f90475694c41965c9a0c8bac53ea5c690dea446": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.17",
+      "fileName": "log4j-1.2.17.jar",
+      "sha1": "4f90475694c41965c9a0c8bac53ea5c690dea446"
+    },
+    "533f6ae0bb0ce091493f2eeab0c1df4327e46ef1": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.13.1",
+      "fileName": "log4j-core-2.13.1.jar",
+      "sha1": "533f6ae0bb0ce091493f2eeab0c1df4327e46ef1"
+    },
+    "554e05a8e48b48b5652ccf14fcbc1ff93bdf96e5": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.5.0.redhat-2",
+      "fileName": "log4j-core-2.5.0.redhat-2.jar",
+      "sha1": "554e05a8e48b48b5652ccf14fcbc1ff93bdf96e5"
+    },
+    "55856d711ab8b88f8c7b04fd85ff1643ffbfde7c": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.9",
+      "fileName": "log4j-1.2.9.jar",
+      "sha1": "55856d711ab8b88f8c7b04fd85ff1643ffbfde7c"
+    },
+    "57b8b57dac4c87696acb4b8457fd8cbf4273d40d": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.13.0",
+      "fileName": "log4j-core-2.13.0.jar",
+      "sha1": "57b8b57dac4c87696acb4b8457fd8cbf4273d40d"
+    },
+    "58a3e964db5307e30650817c5daac1e8c8ede648": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.3",
+      "fileName": "log4j-core-2.3.jar",
+      "sha1": "58a3e964db5307e30650817c5daac1e8c8ede648"
+    },
+    "592a48674c926b01a9a747c7831bcd82a9e6d6e4": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.11.1",
+      "fileName": "log4j-core-2.11.1.jar",
+      "sha1": "592a48674c926b01a9a747c7831bcd82a9e6d6e4"
+    },
+    "5a5154f0943ff46c7b8d1e3ea6ff3d8cd13135f2": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.1",
+      "fileName": "log4j-1.2.1.jar",
+      "sha1": "5a5154f0943ff46c7b8d1e3ea6ff3d8cd13135f2"
+    },
+    "5af35056b4d257e4b64b9e8069c0746e8b08629f": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.17",
+      "fileName": "log4j-log4j-1.2.17.jar",
+      "sha1": "5af35056b4d257e4b64b9e8069c0746e8b08629f"
+    },
+    "5b8a2a161048eb7481407ef0a81c2d90489ed412": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.7",
+      "fileName": "log4j-1.2.7.jar",
+      "sha1": "5b8a2a161048eb7481407ef0a81c2d90489ed412"
+    },
+    "5d690dc8a8fb0fda4c52beb0afefba4118b4e61c": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.3",
+      "fileName": "log4j-1.2.3.jar",
+      "sha1": "5d690dc8a8fb0fda4c52beb0afefba4118b4e61c"
+    },
+    "5ec261095ecfeeab03730f5b8911ba819d29f466": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.5.0.redhat-1",
+      "fileName": "log4j-core-2.5.0.redhat-1.jar",
+      "sha1": "5ec261095ecfeeab03730f5b8911ba819d29f466"
+    },
+    "5f298ccfc5319788e9c34c67b67abdab5ccde47f": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.11.1.redhat-00001",
+      "fileName": "log4j-core-2.11.1.redhat-00001.jar",
+      "sha1": "5f298ccfc5319788e9c34c67b67abdab5ccde47f"
+    },
+    "60c87da55398af5ef61f5e1f24e22ec0351d1199": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.8.2.redhat-002",
+      "fileName": "log4j-core-2.8.2.redhat-002.jar",
+      "sha1": "60c87da55398af5ef61f5e1f24e22ec0351d1199"
+    },
+    "650611b0cd23143b2f30df126e39a53ca846a80f": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.11.2.redhat-00002",
+      "fileName": "log4j-core-2.11.2.redhat-00002.jar",
+      "sha1": "650611b0cd23143b2f30df126e39a53ca846a80f"
+    },
+    "677abe279b68c5e7490d6d50c6951376238d7d3e": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.17",
+      "fileName": "log4j-1.2.17-sources.jar",
+      "sha1": "677abe279b68c5e7490d6d50c6951376238d7d3e"
+    },
+    "678861ba1b2e1fccb594bb0ca03114bb05da9695": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.0-beta9",
+      "fileName": "log4j-core-2.0-beta9.jar",
+      "sha1": "678861ba1b2e1fccb594bb0ca03114bb05da9695"
+    },
+    "685125b7b8bbd7c2f58259937090ac2ae9bcb129": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.0-alpha2",
+      "fileName": "log4j-core-2.0-alpha2.jar",
+      "sha1": "685125b7b8bbd7c2f58259937090ac2ae9bcb129"
+    },
+    "6c2fb3f5b7cd27504726aef1b674b542a0c9cf53": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.11.2",
+      "fileName": "log4j-core-2.11.2.jar",
+      "sha1": "6c2fb3f5b7cd27504726aef1b674b542a0c9cf53"
+    },
+    "7058796a0aa49ea21ea2cc7bf9dece0d3b8942ae": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.0-beta1",
+      "fileName": "log4j-core-2.0-beta1.jar",
+      "sha1": "7058796a0aa49ea21ea2cc7bf9dece0d3b8942ae"
+    },
+    "7621fe28ce0122d96006bdb56c8e2cfb2a3afb92": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.0",
+      "fileName": "log4j-core-2.0.jar",
+      "sha1": "7621fe28ce0122d96006bdb56c8e2cfb2a3afb92"
+    },
+    "762df5d24d8d1a7f5137fbec5aab5d07cd2c9e22": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2rc1",
+      "fileName": "log4j-1.2rc1.jar",
+      "sha1": "762df5d24d8d1a7f5137fbec5aab5d07cd2c9e22"
+    },
+    "7999a63bfccbc7c247a9aea10d83d4272bd492c6": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.16",
+      "fileName": "log4j-1.2.16.jar",
+      "sha1": "7999a63bfccbc7c247a9aea10d83d4272bd492c6"
+    },
+    "7ed845de1dfe070d43511fab321784e6c4118398": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.5",
+      "fileName": "log4j-core-2.5.jar",
+      "sha1": "7ed845de1dfe070d43511fab321784e6c4118398"
+    },
+    "80b690d982b030fb2f04854407744ff44e0b72ea": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.0-beta3",
+      "fileName": "log4j-core-2.0-beta3.jar",
+      "sha1": "80b690d982b030fb2f04854407744ff44e0b72ea"
+    },
+    "895130076efaf6dcafb741ed7e97f2d346903708": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.0.1",
+      "fileName": "log4j-core-2.0.1.jar",
+      "sha1": "895130076efaf6dcafb741ed7e97f2d346903708"
+    },
+    "8b1b85d04eea979c33109ea42808b7d3f6d355ab": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.13",
+      "fileName": "log4j-1.2.13.jar",
+      "sha1": "8b1b85d04eea979c33109ea42808b7d3f6d355ab"
+    },
+    "8f3e9eecb6d4e24ab6e512b1139209ab161ced1e": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.16-redhat-1",
+      "fileName": "log4j-1.2.16-redhat-1.jar",
+      "sha1": "8f3e9eecb6d4e24ab6e512b1139209ab161ced1e"
+    },
+    "8f87799c2bd24c120812ed3d5271b743cfc999b5": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.0-beta4",
+      "fileName": "log4j-core-2.0-beta4.jar",
+      "sha1": "8f87799c2bd24c120812ed3d5271b743cfc999b5"
+    },
+    "963141af479433d5d823fbdea7025b7e35b45272": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.4",
+      "fileName": "log4j-1.2.4.jar",
+      "sha1": "963141af479433d5d823fbdea7025b7e35b45272"
+    },
+    "979fc0cf8460302e4ffbfe38c1b66a99450b0bb7": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.8.2",
+      "fileName": "log4j-core-2.8.2.jar",
+      "sha1": "979fc0cf8460302e4ffbfe38c1b66a99450b0bb7"
+    },
+    "9d9f5e9aa49bc267e35bf2a17bc69a0393ae4329": {
+      "groupId": "org.apache.logging.log4j.osgi",
+      "artifactId": "log4j-core-osgi-reduced",
+      "packageVersion": "2.0-beta9",
+      "fileName": "log4j-core-osgi-reduced-2.0-beta9.jar",
+      "sha1": "9d9f5e9aa49bc267e35bf2a17bc69a0393ae4329"
+    },
+    "a065ec821237d1d16f6ada09d193e193de49f03f": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.8.0.redhat-1",
+      "fileName": "log4j-core-2.8.0.redhat-1.jar",
+      "sha1": "a065ec821237d1d16f6ada09d193e193de49f03f"
+    },
+    "a3f2b4e64c61a7fc1ed8f1e5ba371933404ed98a": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.7",
+      "fileName": "log4j-core-2.7.jar",
+      "sha1": "a3f2b4e64c61a7fc1ed8f1e5ba371933404ed98a"
+    },
+    "a5334910f90944575147fd1c1aef9f407c24db99": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.4.1",
+      "fileName": "log4j-core-2.4.1.jar",
+      "sha1": "a5334910f90944575147fd1c1aef9f407c24db99"
+    },
+    "a727fe8e718b18d541f67077c99b2ca129f77065": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.0-beta7",
+      "fileName": "log4j-core-2.0-beta7.jar",
+      "sha1": "a727fe8e718b18d541f67077c99b2ca129f77065"
+    },
+    "a7cb258b9c36f49c148834a3a35b53fe73c28777": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.6",
+      "fileName": "log4j-core-2.6.jar",
+      "sha1": "a7cb258b9c36f49c148834a3a35b53fe73c28777"
+    },
+    "b5f9c15e1fb18d84193ac10e4bfb88af1724f5cd": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.0-beta2",
+      "fileName": "log4j-core-2.0-beta2.jar",
+      "sha1": "b5f9c15e1fb18d84193ac10e4bfb88af1724f5cd"
+    },
+    "b853dec96e815981280fb9a1cc08332a6ed946f9": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.0-beta5",
+      "fileName": "log4j-core-2.0-beta5.jar",
+      "sha1": "b853dec96e815981280fb9a1cc08332a6ed946f9"
+    },
+    "be58c292e29e58229b9f6e440b6daf99892c26b8": {
+      "groupId": "org.apache.logging.log4j.osgi",
+      "artifactId": "log4j-core-osgi-reduced",
+      "packageVersion": "2.0-beta8",
+      "fileName": "log4j-core-osgi-reduced-2.0-beta8.jar",
+      "sha1": "be58c292e29e58229b9f6e440b6daf99892c26b8"
+    },
+    "bf945d1dc995be7fe64923625f842fbb6bf443be": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.16",
+      "fileName": "log4j-1.2.16-sources.jar",
+      "sha1": "bf945d1dc995be7fe64923625f842fbb6bf443be"
+    },
+    "c041978c686866ee8534f538c6220238db3bb6be": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.9.1",
+      "fileName": "log4j-core-2.9.1.jar",
+      "sha1": "c041978c686866ee8534f538c6220238db3bb6be"
+    },
+    "c506424c00adc6df9a367632c45351fb48e52216": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.15",
+      "fileName": "com.springsource.org.apache.log4j-1.2.15.jar",
+      "sha1": "c506424c00adc6df9a367632c45351fb48e52216"
+    },
+    "c707664e020218f8529b9a5e55016ee15f0f82ac": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.2",
+      "fileName": "log4j-core-2.2.jar",
+      "sha1": "c707664e020218f8529b9a5e55016ee15f0f82ac"
+    },
+    "c90b597163cd28ab6d9687edd53db601b6ea75a1": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.10.0",
+      "fileName": "org.apache.logging.log4j-log4j-core-2.10.0.jar",
+      "sha1": "c90b597163cd28ab6d9687edd53db601b6ea75a1"
+    },
+    "c9553fc638e1f7e29e28c233e799dfb8a798f212": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2beta4",
+      "fileName": "log4j-1.2beta4.jar",
+      "sha1": "c9553fc638e1f7e29e28c233e799dfb8a798f212"
+    },
+    "ca08ab628d869b31cf396a1277b7f71a1be48634": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.16.redhat-3",
+      "fileName": "log4j-1.2.16.redhat-3.jar",
+      "sha1": "ca08ab628d869b31cf396a1277b7f71a1be48634"
+    },
+    "cc544b23a1ecf4d946035a9787da87d468afcb85": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.16-redhat-2",
+      "fileName": "log4j-1.2.16-redhat-2.jar",
+      "sha1": "cc544b23a1ecf4d946035a9787da87d468afcb85"
+    },
+    "dcd2d751464a26f187e66f1ffe762c93210438bf": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.2.0.redhat-2",
+      "fileName": "log4j-core-2.2.0.redhat-2.jar",
+      "sha1": "dcd2d751464a26f187e66f1ffe762c93210438bf"
+    },
+    "e6b751e02120c08702d98750f6a80bc25343b7f5": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.11.0",
+      "fileName": "log4j-core-2.11.0.jar",
+      "sha1": "e6b751e02120c08702d98750f6a80bc25343b7f5"
+    },
+    "e7dc681a6da4f2f203dccd1068a1ea090f67a057": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.0-alpha1",
+      "fileName": "log4j-core-2.0-alpha1.jar",
+      "sha1": "e7dc681a6da4f2f203dccd1068a1ea090f67a057"
+    },
+    "ea6e8a07ac26c15d2e306787d8697314b547b452": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.5",
+      "fileName": "log4j-1.2.5.jar",
+      "sha1": "ea6e8a07ac26c15d2e306787d8697314b547b452"
+    },
+    "ed99afbe886ea07400088ef2afe1ea8b8d521050": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.5.0.redhat-3",
+      "fileName": "log4j-core-2.5.0.redhat-3.jar",
+      "sha1": "ed99afbe886ea07400088ef2afe1ea8b8d521050"
+    },
+    "ee42895558dd5a9b025a0235807b3c5ca560032b": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.11",
+      "fileName": "log4j-1.2.11.jar",
+      "sha1": "ee42895558dd5a9b025a0235807b3c5ca560032b"
+    },
+    "f0a0d2e29ed910808c33135a3a5a51bba6358f7b": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.15",
+      "fileName": "log4j-1.2.15.jar",
+      "sha1": "f0a0d2e29ed910808c33135a3a5a51bba6358f7b"
+    },
+    "f293c862e47084b6e959f40f05dbb73af59e9ad4": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.1.3",
+      "fileName": "log4j-1.1.3.jar",
+      "sha1": "f293c862e47084b6e959f40f05dbb73af59e9ad4"
+    },
+    "f6ed9c56c8d58c4670059ddf417df23c9a78ff30": {
+      "groupId": "org.apache.logging.log4j",
+      "artifactId": "log4j-core",
+      "packageVersion": "2.0-beta8",
+      "fileName": "log4j-core-2.0-beta8.jar",
+      "sha1": "f6ed9c56c8d58c4670059ddf417df23c9a78ff30"
+    },
+    "f918422d933b06524883cebeb6206ef311f3189a": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.16.redhat-5",
+      "fileName": "log4j-1.2.16.redhat-5.jar",
+      "sha1": "f918422d933b06524883cebeb6206ef311f3189a"
+    }
+  },
+  "CVE-2020-9493": {
+    "0278c9d0ae02132ab6d00e709926c227022e85a4": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.16",
+      "fileName": "log4j-1.2.16.jar",
+      "sha1": "0278c9d0ae02132ab6d00e709926c227022e85a4"
+    },
+    "03b254c872b95141751f414e353a25c2ac261b51": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.14",
+      "fileName": "log4j-1.2.14.jar",
+      "sha1": "03b254c872b95141751f414e353a25c2ac261b51"
+    },
+    "057b8740427ee6d7b0b60792751356cad17dc0d9": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.12",
+      "fileName": "log4j-1.2.12.jar",
+      "sha1": "057b8740427ee6d7b0b60792751356cad17dc0d9"
+    },
+    "0c0a953ee046804871485893a88434a60964e20f": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.16.redhat-4",
+      "fileName": "log4j-1.2.16.redhat-4.jar",
+      "sha1": "0c0a953ee046804871485893a88434a60964e20f"
+    },
+    "3640dd71069d7986c9a14d333519216f4ca5c094": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.8",
+      "fileName": "log4j-1.2.8.jar",
+      "sha1": "3640dd71069d7986c9a14d333519216f4ca5c094"
+    },
+    "3b1bbc44acb00a297ea07ec03038464ee5685832": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.2",
+      "fileName": "log4j-1.2.2.jar",
+      "sha1": "3b1bbc44acb00a297ea07ec03038464ee5685832"
+    },
+    "4bf32b10f459a4ecd4df234ae2ccb32b9d9ba9b7": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.6",
+      "fileName": "log4j-1.2.6.jar",
+      "sha1": "4bf32b10f459a4ecd4df234ae2ccb32b9d9ba9b7"
+    },
+    "4f90475694c41965c9a0c8bac53ea5c690dea446": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.17",
+      "fileName": "log4j-1.2.17.jar",
+      "sha1": "4f90475694c41965c9a0c8bac53ea5c690dea446"
+    },
+    "55856d711ab8b88f8c7b04fd85ff1643ffbfde7c": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.9",
+      "fileName": "log4j-1.2.9.jar",
+      "sha1": "55856d711ab8b88f8c7b04fd85ff1643ffbfde7c"
+    },
+    "5a5154f0943ff46c7b8d1e3ea6ff3d8cd13135f2": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.1",
+      "fileName": "log4j-1.2.1.jar",
+      "sha1": "5a5154f0943ff46c7b8d1e3ea6ff3d8cd13135f2"
+    },
+    "5af35056b4d257e4b64b9e8069c0746e8b08629f": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.17",
+      "fileName": "log4j-log4j-1.2.17.jar",
+      "sha1": "5af35056b4d257e4b64b9e8069c0746e8b08629f"
+    },
+    "5b8a2a161048eb7481407ef0a81c2d90489ed412": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.7",
+      "fileName": "log4j-1.2.7.jar",
+      "sha1": "5b8a2a161048eb7481407ef0a81c2d90489ed412"
+    },
+    "5d690dc8a8fb0fda4c52beb0afefba4118b4e61c": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.3",
+      "fileName": "log4j-1.2.3.jar",
+      "sha1": "5d690dc8a8fb0fda4c52beb0afefba4118b4e61c"
+    },
+    "677abe279b68c5e7490d6d50c6951376238d7d3e": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.17",
+      "fileName": "log4j-1.2.17-sources.jar",
+      "sha1": "677abe279b68c5e7490d6d50c6951376238d7d3e"
+    },
+    "762df5d24d8d1a7f5137fbec5aab5d07cd2c9e22": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2rc1",
+      "fileName": "log4j-1.2rc1.jar",
+      "sha1": "762df5d24d8d1a7f5137fbec5aab5d07cd2c9e22"
+    },
+    "7999a63bfccbc7c247a9aea10d83d4272bd492c6": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.16",
+      "fileName": "log4j-1.2.16.jar",
+      "sha1": "7999a63bfccbc7c247a9aea10d83d4272bd492c6"
+    },
+    "8b1b85d04eea979c33109ea42808b7d3f6d355ab": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.13",
+      "fileName": "log4j-1.2.13.jar",
+      "sha1": "8b1b85d04eea979c33109ea42808b7d3f6d355ab"
+    },
+    "8f3e9eecb6d4e24ab6e512b1139209ab161ced1e": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.16-redhat-1",
+      "fileName": "log4j-1.2.16-redhat-1.jar",
+      "sha1": "8f3e9eecb6d4e24ab6e512b1139209ab161ced1e"
+    },
+    "963141af479433d5d823fbdea7025b7e35b45272": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.4",
+      "fileName": "log4j-1.2.4.jar",
+      "sha1": "963141af479433d5d823fbdea7025b7e35b45272"
+    },
+    "bf945d1dc995be7fe64923625f842fbb6bf443be": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.16",
+      "fileName": "log4j-1.2.16-sources.jar",
+      "sha1": "bf945d1dc995be7fe64923625f842fbb6bf443be"
+    },
+    "c506424c00adc6df9a367632c45351fb48e52216": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.15",
+      "fileName": "com.springsource.org.apache.log4j-1.2.15.jar",
+      "sha1": "c506424c00adc6df9a367632c45351fb48e52216"
+    },
+    "c9553fc638e1f7e29e28c233e799dfb8a798f212": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2beta4",
+      "fileName": "log4j-1.2beta4.jar",
+      "sha1": "c9553fc638e1f7e29e28c233e799dfb8a798f212"
+    },
+    "ca08ab628d869b31cf396a1277b7f71a1be48634": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.16.redhat-3",
+      "fileName": "log4j-1.2.16.redhat-3.jar",
+      "sha1": "ca08ab628d869b31cf396a1277b7f71a1be48634"
+    },
+    "cc544b23a1ecf4d946035a9787da87d468afcb85": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.16-redhat-2",
+      "fileName": "log4j-1.2.16-redhat-2.jar",
+      "sha1": "cc544b23a1ecf4d946035a9787da87d468afcb85"
+    },
+    "ea6e8a07ac26c15d2e306787d8697314b547b452": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.5",
+      "fileName": "log4j-1.2.5.jar",
+      "sha1": "ea6e8a07ac26c15d2e306787d8697314b547b452"
+    },
+    "ee42895558dd5a9b025a0235807b3c5ca560032b": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.11",
+      "fileName": "log4j-1.2.11.jar",
+      "sha1": "ee42895558dd5a9b025a0235807b3c5ca560032b"
+    },
+    "f0a0d2e29ed910808c33135a3a5a51bba6358f7b": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.15",
+      "fileName": "log4j-1.2.15.jar",
+      "sha1": "f0a0d2e29ed910808c33135a3a5a51bba6358f7b"
+    },
+    "f293c862e47084b6e959f40f05dbb73af59e9ad4": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.1.3",
+      "fileName": "log4j-1.1.3.jar",
+      "sha1": "f293c862e47084b6e959f40f05dbb73af59e9ad4"
+    },
+    "f918422d933b06524883cebeb6206ef311f3189a": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.16.redhat-5",
+      "fileName": "log4j-1.2.16.redhat-5.jar",
+      "sha1": "f918422d933b06524883cebeb6206ef311f3189a"
+    }
+  },
+  "CVE-2022-23302": {
+    "0278c9d0ae02132ab6d00e709926c227022e85a4": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.16",
+      "fileName": "log4j-1.2.16.jar",
+      "sha1": "0278c9d0ae02132ab6d00e709926c227022e85a4"
+    },
+    "03b254c872b95141751f414e353a25c2ac261b51": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.14",
+      "fileName": "log4j-1.2.14.jar",
+      "sha1": "03b254c872b95141751f414e353a25c2ac261b51"
+    },
+    "057b8740427ee6d7b0b60792751356cad17dc0d9": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.12",
+      "fileName": "log4j-1.2.12.jar",
+      "sha1": "057b8740427ee6d7b0b60792751356cad17dc0d9"
+    },
+    "0c0a953ee046804871485893a88434a60964e20f": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.16.redhat-4",
+      "fileName": "log4j-1.2.16.redhat-4.jar",
+      "sha1": "0c0a953ee046804871485893a88434a60964e20f"
+    },
+    "3640dd71069d7986c9a14d333519216f4ca5c094": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.8",
+      "fileName": "log4j-1.2.8.jar",
+      "sha1": "3640dd71069d7986c9a14d333519216f4ca5c094"
+    },
+    "3b1bbc44acb00a297ea07ec03038464ee5685832": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.2",
+      "fileName": "log4j-1.2.2.jar",
+      "sha1": "3b1bbc44acb00a297ea07ec03038464ee5685832"
+    },
+    "45ec96169624b9388fe61d64ae5b7d5d62e8e438": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.17-cloudera1",
+      "fileName": "log4j-1.2.17-cloudera1.jar",
+      "sha1": "45ec96169624b9388fe61d64ae5b7d5d62e8e438"
+    },
+    "4b7a86db055b939434925910818c09ce5944580e": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.17-atlassian-1",
+      "fileName": "log4j-1.2.17-atlassian-1.jar",
+      "sha1": "4b7a86db055b939434925910818c09ce5944580e"
+    },
+    "4bf32b10f459a4ecd4df234ae2ccb32b9d9ba9b7": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.6",
+      "fileName": "log4j-1.2.6.jar",
+      "sha1": "4bf32b10f459a4ecd4df234ae2ccb32b9d9ba9b7"
+    },
+    "4f90475694c41965c9a0c8bac53ea5c690dea446": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.17",
+      "fileName": "log4j-1.2.17.jar",
+      "sha1": "4f90475694c41965c9a0c8bac53ea5c690dea446"
+    },
+    "55856d711ab8b88f8c7b04fd85ff1643ffbfde7c": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.9",
+      "fileName": "log4j-1.2.9.jar",
+      "sha1": "55856d711ab8b88f8c7b04fd85ff1643ffbfde7c"
+    },
+    "5a5154f0943ff46c7b8d1e3ea6ff3d8cd13135f2": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.1",
+      "fileName": "log4j-1.2.1.jar",
+      "sha1": "5a5154f0943ff46c7b8d1e3ea6ff3d8cd13135f2"
+    },
+    "5af35056b4d257e4b64b9e8069c0746e8b08629f": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.17",
+      "fileName": "log4j-log4j-1.2.17.jar",
+      "sha1": "5af35056b4d257e4b64b9e8069c0746e8b08629f"
+    },
+    "5b8a2a161048eb7481407ef0a81c2d90489ed412": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.7",
+      "fileName": "log4j-1.2.7.jar",
+      "sha1": "5b8a2a161048eb7481407ef0a81c2d90489ed412"
+    },
+    "5d690dc8a8fb0fda4c52beb0afefba4118b4e61c": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.3",
+      "fileName": "log4j-1.2.3.jar",
+      "sha1": "5d690dc8a8fb0fda4c52beb0afefba4118b4e61c"
+    },
+    "677abe279b68c5e7490d6d50c6951376238d7d3e": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.17",
+      "fileName": "log4j-1.2.17-sources.jar",
+      "sha1": "677abe279b68c5e7490d6d50c6951376238d7d3e"
+    },
+    "72f7a2a9e02ab607f767e156ca15db52a96f4673": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.17.redhat-2",
+      "fileName": "log4j-1.2.17.redhat-2.jar",
+      "sha1": "72f7a2a9e02ab607f767e156ca15db52a96f4673"
+    },
+    "762df5d24d8d1a7f5137fbec5aab5d07cd2c9e22": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2rc1",
+      "fileName": "log4j-1.2rc1.jar",
+      "sha1": "762df5d24d8d1a7f5137fbec5aab5d07cd2c9e22"
+    },
+    "7999a63bfccbc7c247a9aea10d83d4272bd492c6": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.16",
+      "fileName": "log4j-1.2.16.jar",
+      "sha1": "7999a63bfccbc7c247a9aea10d83d4272bd492c6"
+    },
+    "88db437e4d9b6ae5b296aad5021cddb01f1bf737": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.17.redhat-1",
+      "fileName": "log4j-1.2.17.redhat-1.jar",
+      "sha1": "88db437e4d9b6ae5b296aad5021cddb01f1bf737"
+    },
+    "8b1b85d04eea979c33109ea42808b7d3f6d355ab": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.13",
+      "fileName": "log4j-1.2.13.jar",
+      "sha1": "8b1b85d04eea979c33109ea42808b7d3f6d355ab"
+    },
+    "8f3e9eecb6d4e24ab6e512b1139209ab161ced1e": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.16-redhat-1",
+      "fileName": "log4j-1.2.16-redhat-1.jar",
+      "sha1": "8f3e9eecb6d4e24ab6e512b1139209ab161ced1e"
+    },
+    "963141af479433d5d823fbdea7025b7e35b45272": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.4",
+      "fileName": "log4j-1.2.4.jar",
+      "sha1": "963141af479433d5d823fbdea7025b7e35b45272"
+    },
+    "bf945d1dc995be7fe64923625f842fbb6bf443be": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.16",
+      "fileName": "log4j-1.2.16-sources.jar",
+      "sha1": "bf945d1dc995be7fe64923625f842fbb6bf443be"
+    },
+    "c506424c00adc6df9a367632c45351fb48e52216": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.15",
+      "fileName": "com.springsource.org.apache.log4j-1.2.15.jar",
+      "sha1": "c506424c00adc6df9a367632c45351fb48e52216"
+    },
+    "c9553fc638e1f7e29e28c233e799dfb8a798f212": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2beta4",
+      "fileName": "log4j-1.2beta4.jar",
+      "sha1": "c9553fc638e1f7e29e28c233e799dfb8a798f212"
+    },
+    "ca08ab628d869b31cf396a1277b7f71a1be48634": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.16.redhat-3",
+      "fileName": "log4j-1.2.16.redhat-3.jar",
+      "sha1": "ca08ab628d869b31cf396a1277b7f71a1be48634"
+    },
+    "cc544b23a1ecf4d946035a9787da87d468afcb85": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.16-redhat-2",
+      "fileName": "log4j-1.2.16-redhat-2.jar",
+      "sha1": "cc544b23a1ecf4d946035a9787da87d468afcb85"
+    },
+    "d56103c4a5eacca8072660ea10c4868299e32307": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.17.redhat-3",
+      "fileName": "log4j-1.2.17.redhat-3.jar",
+      "sha1": "d56103c4a5eacca8072660ea10c4868299e32307"
+    },
+    "ea6e8a07ac26c15d2e306787d8697314b547b452": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.5",
+      "fileName": "log4j-1.2.5.jar",
+      "sha1": "ea6e8a07ac26c15d2e306787d8697314b547b452"
+    },
+    "ee42895558dd5a9b025a0235807b3c5ca560032b": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.11",
+      "fileName": "log4j-1.2.11.jar",
+      "sha1": "ee42895558dd5a9b025a0235807b3c5ca560032b"
+    },
+    "f0a0d2e29ed910808c33135a3a5a51bba6358f7b": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.15",
+      "fileName": "log4j-1.2.15.jar",
+      "sha1": "f0a0d2e29ed910808c33135a3a5a51bba6358f7b"
+    },
+    "f293c862e47084b6e959f40f05dbb73af59e9ad4": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.1.3",
+      "fileName": "log4j-1.1.3.jar",
+      "sha1": "f293c862e47084b6e959f40f05dbb73af59e9ad4"
+    },
+    "f918422d933b06524883cebeb6206ef311f3189a": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.16.redhat-5",
+      "fileName": "log4j-1.2.16.redhat-5.jar",
+      "sha1": "f918422d933b06524883cebeb6206ef311f3189a"
+    }
+  },
+  "CVE-2022-23305": {
+    "0278c9d0ae02132ab6d00e709926c227022e85a4": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.16",
+      "fileName": "log4j-1.2.16.jar",
+      "sha1": "0278c9d0ae02132ab6d00e709926c227022e85a4"
+    },
+    "03b254c872b95141751f414e353a25c2ac261b51": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.14",
+      "fileName": "log4j-1.2.14.jar",
+      "sha1": "03b254c872b95141751f414e353a25c2ac261b51"
+    },
+    "057b8740427ee6d7b0b60792751356cad17dc0d9": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.12",
+      "fileName": "log4j-1.2.12.jar",
+      "sha1": "057b8740427ee6d7b0b60792751356cad17dc0d9"
+    },
+    "0c0a953ee046804871485893a88434a60964e20f": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.16.redhat-4",
+      "fileName": "log4j-1.2.16.redhat-4.jar",
+      "sha1": "0c0a953ee046804871485893a88434a60964e20f"
+    },
+    "3640dd71069d7986c9a14d333519216f4ca5c094": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.8",
+      "fileName": "log4j-1.2.8.jar",
+      "sha1": "3640dd71069d7986c9a14d333519216f4ca5c094"
+    },
+    "3b1bbc44acb00a297ea07ec03038464ee5685832": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.2",
+      "fileName": "log4j-1.2.2.jar",
+      "sha1": "3b1bbc44acb00a297ea07ec03038464ee5685832"
+    },
+    "4bf32b10f459a4ecd4df234ae2ccb32b9d9ba9b7": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.6",
+      "fileName": "log4j-1.2.6.jar",
+      "sha1": "4bf32b10f459a4ecd4df234ae2ccb32b9d9ba9b7"
+    },
+    "4f90475694c41965c9a0c8bac53ea5c690dea446": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.17",
+      "fileName": "log4j-1.2.17.jar",
+      "sha1": "4f90475694c41965c9a0c8bac53ea5c690dea446"
+    },
+    "55856d711ab8b88f8c7b04fd85ff1643ffbfde7c": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.9",
+      "fileName": "log4j-1.2.9.jar",
+      "sha1": "55856d711ab8b88f8c7b04fd85ff1643ffbfde7c"
+    },
+    "5a5154f0943ff46c7b8d1e3ea6ff3d8cd13135f2": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.1",
+      "fileName": "log4j-1.2.1.jar",
+      "sha1": "5a5154f0943ff46c7b8d1e3ea6ff3d8cd13135f2"
+    },
+    "5af35056b4d257e4b64b9e8069c0746e8b08629f": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.17",
+      "fileName": "log4j-log4j-1.2.17.jar",
+      "sha1": "5af35056b4d257e4b64b9e8069c0746e8b08629f"
+    },
+    "5b8a2a161048eb7481407ef0a81c2d90489ed412": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.7",
+      "fileName": "log4j-1.2.7.jar",
+      "sha1": "5b8a2a161048eb7481407ef0a81c2d90489ed412"
+    },
+    "5d690dc8a8fb0fda4c52beb0afefba4118b4e61c": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.3",
+      "fileName": "log4j-1.2.3.jar",
+      "sha1": "5d690dc8a8fb0fda4c52beb0afefba4118b4e61c"
+    },
+    "677abe279b68c5e7490d6d50c6951376238d7d3e": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.17",
+      "fileName": "log4j-1.2.17-sources.jar",
+      "sha1": "677abe279b68c5e7490d6d50c6951376238d7d3e"
+    },
+    "762df5d24d8d1a7f5137fbec5aab5d07cd2c9e22": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2rc1",
+      "fileName": "log4j-1.2rc1.jar",
+      "sha1": "762df5d24d8d1a7f5137fbec5aab5d07cd2c9e22"
+    },
+    "7999a63bfccbc7c247a9aea10d83d4272bd492c6": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.16",
+      "fileName": "log4j-1.2.16.jar",
+      "sha1": "7999a63bfccbc7c247a9aea10d83d4272bd492c6"
+    },
+    "8b1b85d04eea979c33109ea42808b7d3f6d355ab": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.13",
+      "fileName": "log4j-1.2.13.jar",
+      "sha1": "8b1b85d04eea979c33109ea42808b7d3f6d355ab"
+    },
+    "8f3e9eecb6d4e24ab6e512b1139209ab161ced1e": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.16-redhat-1",
+      "fileName": "log4j-1.2.16-redhat-1.jar",
+      "sha1": "8f3e9eecb6d4e24ab6e512b1139209ab161ced1e"
+    },
+    "963141af479433d5d823fbdea7025b7e35b45272": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.4",
+      "fileName": "log4j-1.2.4.jar",
+      "sha1": "963141af479433d5d823fbdea7025b7e35b45272"
+    },
+    "bf945d1dc995be7fe64923625f842fbb6bf443be": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.16",
+      "fileName": "log4j-1.2.16-sources.jar",
+      "sha1": "bf945d1dc995be7fe64923625f842fbb6bf443be"
+    },
+    "c506424c00adc6df9a367632c45351fb48e52216": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.15",
+      "fileName": "com.springsource.org.apache.log4j-1.2.15.jar",
+      "sha1": "c506424c00adc6df9a367632c45351fb48e52216"
+    },
+    "c9553fc638e1f7e29e28c233e799dfb8a798f212": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2beta4",
+      "fileName": "log4j-1.2beta4.jar",
+      "sha1": "c9553fc638e1f7e29e28c233e799dfb8a798f212"
+    },
+    "ca08ab628d869b31cf396a1277b7f71a1be48634": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.16.redhat-3",
+      "fileName": "log4j-1.2.16.redhat-3.jar",
+      "sha1": "ca08ab628d869b31cf396a1277b7f71a1be48634"
+    },
+    "cc544b23a1ecf4d946035a9787da87d468afcb85": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.16-redhat-2",
+      "fileName": "log4j-1.2.16-redhat-2.jar",
+      "sha1": "cc544b23a1ecf4d946035a9787da87d468afcb85"
+    },
+    "ea6e8a07ac26c15d2e306787d8697314b547b452": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.5",
+      "fileName": "log4j-1.2.5.jar",
+      "sha1": "ea6e8a07ac26c15d2e306787d8697314b547b452"
+    },
+    "ee42895558dd5a9b025a0235807b3c5ca560032b": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.11",
+      "fileName": "log4j-1.2.11.jar",
+      "sha1": "ee42895558dd5a9b025a0235807b3c5ca560032b"
+    },
+    "f0a0d2e29ed910808c33135a3a5a51bba6358f7b": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.15",
+      "fileName": "log4j-1.2.15.jar",
+      "sha1": "f0a0d2e29ed910808c33135a3a5a51bba6358f7b"
+    },
+    "f293c862e47084b6e959f40f05dbb73af59e9ad4": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.1.3",
+      "fileName": "log4j-1.1.3.jar",
+      "sha1": "f293c862e47084b6e959f40f05dbb73af59e9ad4"
+    },
+    "f918422d933b06524883cebeb6206ef311f3189a": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.16.redhat-5",
+      "fileName": "log4j-1.2.16.redhat-5.jar",
+      "sha1": "f918422d933b06524883cebeb6206ef311f3189a"
+    }
+  },
+  "CVE-2022-23307": {
+    "0278c9d0ae02132ab6d00e709926c227022e85a4": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.16",
+      "fileName": "log4j-1.2.16.jar",
+      "sha1": "0278c9d0ae02132ab6d00e709926c227022e85a4"
+    },
+    "03b254c872b95141751f414e353a25c2ac261b51": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.14",
+      "fileName": "log4j-1.2.14.jar",
+      "sha1": "03b254c872b95141751f414e353a25c2ac261b51"
+    },
+    "057b8740427ee6d7b0b60792751356cad17dc0d9": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.12",
+      "fileName": "log4j-1.2.12.jar",
+      "sha1": "057b8740427ee6d7b0b60792751356cad17dc0d9"
+    },
+    "0c0a953ee046804871485893a88434a60964e20f": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.16.redhat-4",
+      "fileName": "log4j-1.2.16.redhat-4.jar",
+      "sha1": "0c0a953ee046804871485893a88434a60964e20f"
+    },
+    "3640dd71069d7986c9a14d333519216f4ca5c094": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.8",
+      "fileName": "log4j-1.2.8.jar",
+      "sha1": "3640dd71069d7986c9a14d333519216f4ca5c094"
+    },
+    "3b1bbc44acb00a297ea07ec03038464ee5685832": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.2",
+      "fileName": "log4j-1.2.2.jar",
+      "sha1": "3b1bbc44acb00a297ea07ec03038464ee5685832"
+    },
+    "4bf32b10f459a4ecd4df234ae2ccb32b9d9ba9b7": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.6",
+      "fileName": "log4j-1.2.6.jar",
+      "sha1": "4bf32b10f459a4ecd4df234ae2ccb32b9d9ba9b7"
+    },
+    "4f90475694c41965c9a0c8bac53ea5c690dea446": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.17",
+      "fileName": "log4j-1.2.17.jar",
+      "sha1": "4f90475694c41965c9a0c8bac53ea5c690dea446"
+    },
+    "55856d711ab8b88f8c7b04fd85ff1643ffbfde7c": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.9",
+      "fileName": "log4j-1.2.9.jar",
+      "sha1": "55856d711ab8b88f8c7b04fd85ff1643ffbfde7c"
+    },
+    "5a5154f0943ff46c7b8d1e3ea6ff3d8cd13135f2": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.1",
+      "fileName": "log4j-1.2.1.jar",
+      "sha1": "5a5154f0943ff46c7b8d1e3ea6ff3d8cd13135f2"
+    },
+    "5af35056b4d257e4b64b9e8069c0746e8b08629f": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.17",
+      "fileName": "log4j-log4j-1.2.17.jar",
+      "sha1": "5af35056b4d257e4b64b9e8069c0746e8b08629f"
+    },
+    "5b8a2a161048eb7481407ef0a81c2d90489ed412": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.7",
+      "fileName": "log4j-1.2.7.jar",
+      "sha1": "5b8a2a161048eb7481407ef0a81c2d90489ed412"
+    },
+    "5d690dc8a8fb0fda4c52beb0afefba4118b4e61c": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.3",
+      "fileName": "log4j-1.2.3.jar",
+      "sha1": "5d690dc8a8fb0fda4c52beb0afefba4118b4e61c"
+    },
+    "677abe279b68c5e7490d6d50c6951376238d7d3e": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.17",
+      "fileName": "log4j-1.2.17-sources.jar",
+      "sha1": "677abe279b68c5e7490d6d50c6951376238d7d3e"
+    },
+    "762df5d24d8d1a7f5137fbec5aab5d07cd2c9e22": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2rc1",
+      "fileName": "log4j-1.2rc1.jar",
+      "sha1": "762df5d24d8d1a7f5137fbec5aab5d07cd2c9e22"
+    },
+    "7999a63bfccbc7c247a9aea10d83d4272bd492c6": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.16",
+      "fileName": "log4j-1.2.16.jar",
+      "sha1": "7999a63bfccbc7c247a9aea10d83d4272bd492c6"
+    },
+    "8b1b85d04eea979c33109ea42808b7d3f6d355ab": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.13",
+      "fileName": "log4j-1.2.13.jar",
+      "sha1": "8b1b85d04eea979c33109ea42808b7d3f6d355ab"
+    },
+    "8f3e9eecb6d4e24ab6e512b1139209ab161ced1e": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.16-redhat-1",
+      "fileName": "log4j-1.2.16-redhat-1.jar",
+      "sha1": "8f3e9eecb6d4e24ab6e512b1139209ab161ced1e"
+    },
+    "963141af479433d5d823fbdea7025b7e35b45272": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.4",
+      "fileName": "log4j-1.2.4.jar",
+      "sha1": "963141af479433d5d823fbdea7025b7e35b45272"
+    },
+    "bf945d1dc995be7fe64923625f842fbb6bf443be": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.16",
+      "fileName": "log4j-1.2.16-sources.jar",
+      "sha1": "bf945d1dc995be7fe64923625f842fbb6bf443be"
+    },
+    "c506424c00adc6df9a367632c45351fb48e52216": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.15",
+      "fileName": "com.springsource.org.apache.log4j-1.2.15.jar",
+      "sha1": "c506424c00adc6df9a367632c45351fb48e52216"
+    },
+    "ca08ab628d869b31cf396a1277b7f71a1be48634": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.16.redhat-3",
+      "fileName": "log4j-1.2.16.redhat-3.jar",
+      "sha1": "ca08ab628d869b31cf396a1277b7f71a1be48634"
+    },
+    "cc544b23a1ecf4d946035a9787da87d468afcb85": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.16-redhat-2",
+      "fileName": "log4j-1.2.16-redhat-2.jar",
+      "sha1": "cc544b23a1ecf4d946035a9787da87d468afcb85"
+    },
+    "ea6e8a07ac26c15d2e306787d8697314b547b452": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.5",
+      "fileName": "log4j-1.2.5.jar",
+      "sha1": "ea6e8a07ac26c15d2e306787d8697314b547b452"
+    },
+    "ee42895558dd5a9b025a0235807b3c5ca560032b": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.11",
+      "fileName": "log4j-1.2.11.jar",
+      "sha1": "ee42895558dd5a9b025a0235807b3c5ca560032b"
+    },
+    "f0a0d2e29ed910808c33135a3a5a51bba6358f7b": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.15",
+      "fileName": "log4j-1.2.15.jar",
+      "sha1": "f0a0d2e29ed910808c33135a3a5a51bba6358f7b"
+    },
+    "f293c862e47084b6e959f40f05dbb73af59e9ad4": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.1.3",
+      "fileName": "log4j-1.1.3.jar",
+      "sha1": "f293c862e47084b6e959f40f05dbb73af59e9ad4"
+    },
+    "f918422d933b06524883cebeb6206ef311f3189a": {
+      "groupId": "log4j",
+      "artifactId": "log4j",
+      "packageVersion": "1.2.16.redhat-5",
+      "fileName": "log4j-1.2.16.redhat-5.jar",
+      "sha1": "f918422d933b06524883cebeb6206ef311f3189a"
+    }
   }
 }
